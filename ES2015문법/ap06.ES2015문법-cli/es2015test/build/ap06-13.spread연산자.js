@@ -1,3 +1,6 @@
+"use strict";
+
+var _console;
 /*
 
     스프레드 사용법을 학습한다.
@@ -19,3 +22,17 @@
         iterator를 생성해서 next()로 순회할 수 있는 자료구조가 이터러블
 
 */
+
+var cities = ['서울', '부산', '제주'];
+console.log(cities[0], cities[1], cities[2]);
+(_console = console).log.apply(_console, cities);
+var east = ['U', 'K', 'T'];
+var west = ['N', 'C', 'G'];
+
+//east 와 west를 결합하여 countries 배열을 만드시오.
+var countries = east.concat(west);
+
+//east와 west를 결합하여 countries1 배열을 만드시오.
+//spread 연산자 사용하여
+//spread 연산자는 새로운 배열이나 객체를 만들때 주로 사용
+var countries1 = [].concat(east, west);

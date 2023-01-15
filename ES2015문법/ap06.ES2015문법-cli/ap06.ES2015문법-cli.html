@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
+    <metanp name="viewport"
       content="width=device-width, initial-scale=1.0">
     <title>ES6</title>
   </head>
@@ -408,8 +408,8 @@
       $ ls -a
       .  ..  .babelrc  node_modules  package.json  package-lock.json  src
 
-      $ cat src/Example.js
-      // Example.js
+      $ cat src/Module.js
+      // Module.js
       const a = 1;
       const b = 2;
       const d = 4;
@@ -420,15 +420,15 @@
       export default b; // default 는 파일당 1번만 사용 가능
 
       $ cat src/Exmaple2.js
-      // Example2.js
-      import b, { a, c } from './Example.js';
+      // Module2.js
+      import b, { a, c } from './Module.js';
 
       console.log(b); // 2 출력
       console.log(a, c); // 1 출력
 
       $ cat src/Exmaple3.js
-      // Example3.js
-      import b1, { a, c as e } from './Example.js';
+      // Module3.js
+      import b1, { a, c as e } from './Module.js';
       console.log(a, b1, e); // 1, 2, 3
 
     </xmp>
