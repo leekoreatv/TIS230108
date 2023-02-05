@@ -45,10 +45,15 @@ const routes = [
     name: 'imageslider',
     component: () => import('../views/ImageSliderView.vue'),
   },
+  // {
+  //   path: '/4301',
+  //   name: '4301',
+  //   component: () => import('../views/Page4301View.vue'),
+  // },
   {
-    path: '/4301',
-    name: '4301',
-    component: () => import('../views/Page4301View.vue'),
+    path: '/todo',
+    name: '4todo01',
+    component: () => import('../views/TodoView.vue'),
   },
 ];
 
