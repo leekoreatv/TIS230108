@@ -20,17 +20,38 @@
 
 */
 
-const cities = ['서울', '부산', '제주'];
-console.log(cities[0], cities[1], cities[2]);
-console.log(...cities);
+// const cities = ['서울', '부산', '제주'];
+// console.log(cities[0], cities[1], cities[2]);
+// console.log(...cities);
 
-const east = ['U', 'K', 'T'];
-const west = ['N', 'C', 'G'];
+// const east = ['U', 'K', 'T'];
+// const west = ['N', 'C', 'G'];
 
-//east 와 west를 결합하여 countries 배열을 만드시오.
-const countries = east.concat(west);
+// //east 와 west를 결합하여 countries 배열을 만드시오.
+// const countries = east.concat(west);
 
-//east와 west를 결합하여 countries1 배열을 만드시오.
-//spread 연산자 사용하여
-//spread 연산자는 새로운 배열이나 객체를 만들때 주로 사용
-const countries1 = [...east, ...west];
+// //east와 west를 결합하여 countries1 배열을 만드시오.
+// //spread 연산자 사용하여
+// //spread 연산자는 새로운 배열이나 객체를 만들때 주로 사용
+// const countries1 = [...east, ...west];
+
+function childComponent(...props) {
+  console.log(props);
+}
+
+const message = 'passed from Parent Component';
+value = childComponent(...message); //
+
+const moring = {
+  breacfast: '미역국',
+  lunch: '삼치구이',
+};
+
+const dinner = '스테이크';
+
+const meals = {
+  ...moring,
+  dinner, //
+};
+
+console.log(meals);

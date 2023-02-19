@@ -12,3 +12,20 @@
     rest 연산자(...)를 사용하여 함수의 매개변수를 작성한 형태다.
     함수의 매개변수로 넘어오는 값들을 "배열"로 만든다.
 */
+
+var [first, others] = [1, 2, 3, 4, 0];
+console.log('first', first);
+console.log('first', others);
+
+var [first, ...others] = [1, 2, 3, 4, 0];
+console.log('first', first);
+console.log('first', others);
+
+function func3(...args) {
+  var [first, ...others] = args;
+
+  console.log('first', first);
+  console.log('first', others);
+}
+
+func3(1, 2, 3, 4, 0);
